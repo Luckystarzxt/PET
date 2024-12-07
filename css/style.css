@@ -164,4 +164,60 @@ input[type="range"]::-webkit-slider-thumb:hover {
 
 .download-btn:hover {
     background-color: var(--hover-color);
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .upload-area {
+        padding: 1.5rem;
+    }
+
+    .image-preview {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .preview-box {
+        min-height: 150px;
+    }
+
+    .preview-box img {
+        max-height: 200px;
+    }
+
+    .controls {
+        padding-top: 1rem;
+    }
+
+    .download-btn {
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* 小屏幕手机适配 */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .upload-area {
+        padding: 1rem;
+    }
+
+    .upload-icon {
+        width: 36px;
+        height: 36px;
+    }
 } 
